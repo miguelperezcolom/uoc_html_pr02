@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logo.png">
+
+    <title>Biblioteca</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <script>
+        $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="images/logo.svg" width="60" height="28">
+                <b>Miguel Pérez Colom</b>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="info.html">
+                    La biblioteca
+                </a>
+
+                <a class="navbar-item">
+                    Trámites y servicios
+                </a>
+
+                <a class="navbar-item">
+                    Hazte el carnet
+                </a>
+
+                <a class="navbar-item">
+                    Contacto
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" style="margin-bottom: 0px;">
+                            <strong>Log in</strong>
+                        </a>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Buscar">
+                                <span class="icon is-small is-left">
+      <i class="fas fa-search"></i>
+    </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="container">
+
+        <div class="tabs">
+            <ul>
+                <li><a href="colecciones.html">Colecciones</a></li>
+                <li><a>Catálogo</a></li>
+                <li><a>Agenda</a></li>
+                <li><a>Salas de estudio</a></li>
+                <li><a>Área infantil</a></li>
+                <li><a>Recursos digitales</a></li>
+            </ul>
+        </div>
+
+
+
+        <nav class="breadcrumb is-hidden-mobile" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">Miguel Pérez Colom</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Home</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="fichas/el-ala-izquierda.html">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Novedades de otoño en la biblioteca:
+                    </h1>
+                    <h2 class="subtitle">
+                        El ala izquierda
+                    </h2>
+                </div>
+            </div>
+        </section>
+        </a>
+
+
+       <section class="espacio">
+
+       </section>
+
+
+        <section class="noticias">
+
+            <div class="columns">
+                <div class="column is-3">
+                    <a href="colecciones.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image"> <!--  is-4by3 -->
+                                <img src="images/noticia_1.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="title">Colecciones</h1>
+                            <h2 class="subtitle">Novedades del catálogo</h2>
+                            <div class="content">
+                                Consulta las colecciones de la biblioteca, están disponibles en la web. Además de ofrecerte un extenso catálogo, ahora tienes la posibilidad de reservar los libros online. Este otoño hemos ampliado las colecciones con nuevas adquisiciones.
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column is-3">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image"> <!--  is-4by3 -->
+                                <img src="images/noticia_2.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="title">Mujeres y ciencia</h1>
+                            <h2 class="subtitle">Conferencia</h2>
+                            <div class="content">
+                                Con Sonia Estradé. Martes, 13 de noviembre, a las 19.00 h, en la Biblioteca Jaume Fuster
+                            </div>
+                            <div class="content">
+                                Sonia Estradé, licenciada en Física y doctora en Nanociencias por la UB
+                            </div>
+                            <div class="content">
+                                En esta conferencia veremos qué hacen y dónde están las investigadoras de nuestro entorno, nos preguntaremos por sus trayectorias, y veremos ejemplos de mujeres científicas que deberíamos conocer.
+                            </div>
+                            <div class="content">
+                                Colabora: <a href="http://www.ub.edu/laubdivulga/toctoc/">Universidad de Barcelona (proyecto TOC-TOC)</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-3">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image"> <!--  is-4by3 -->
+                                <img src="images/noticia_3.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="title">El lobo cantor de los tres cerditos y Caperucita roja</h1>
+                            <h2 class="subtitle">Teatro infantil</h2>
+                            <div class="content">
+                                Jueves 15 de noviembre a las 18 h. Area infantil.
+                            </div>
+                            <div class="content">
+                                Mercè, acompañada de la música del violín, nos introduce en el mundo de las frutas y las verduras. Nos explicará las maravillas de estos alimentos que nos ofrece la naturaleza. Con su cesta llena, aprovechará la fruta y verdura para contar un par de cuentos populares tradicionales. Este espectáculo es una audición de violín para niños donde pueden dejar volar la imaginación a través de la música y los cuentos y vivir en armonía.
+                            </div>
+                            <div class="content">
+                                A cargo de: <a href="http://www.pengim-penjam.com">Cia. Pengim-Penjam</a>.
+                            </div>
+                            <div class="content">
+                                Edad recomendada: a partir de 3 años
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-3">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image"> <!--  is-4by3 -->
+                                <img src="images/noticia_4.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="title">La novia de Frankenstein</h1>
+                            <h2 class="subtitle">Cine. Proyección.</h2>
+                            <div class="content">
+                                Viernes, 2 de noviembre, a las 20.30 h, en la Sala Joanot Martorell
+                            </div>
+                            <div class="content">
+                                Proyección de la película La Novia de Frankenstein, de 1935, dirigida por James Whale. El director tuvo mucho éxito con Frankenstein, y realizó la secuela en esta película, con una mezcla de terror, ciencia ficción y humor. ¡Ven a pasar una tarde de terror en la biblioteca!
+                            </div>
+                            <div class="content">
+                                Más información: <a href="https://en.wikipedia.org/wiki/Bride_of_Frankenstein">La novia de Frankenstein</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+    <div class="columns">
+        <div class="column is-6">
+            <ul>
+                <li><a href="#">Red de bibliotecas</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Trámites y servicios</a></li>
+            </ul>
+        </div>
+        <div class="column is-6">
+            <ul>
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Protección de datos</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>

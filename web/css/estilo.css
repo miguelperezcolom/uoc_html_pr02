@@ -1,0 +1,156 @@
+
+.container {
+    max-width: 960px;
+}
+
+.body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+h1, h2, h3, h4, dt {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INDEX */
+
+
+.hero {
+    background-image: url("../images/destacada.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+.hero .title, .hero .subtitle {
+    color: white;
+}
+.hero:hover .title, .hero:hover .subtitle {
+    color: lightskyblue;
+}
+
+
+
+.espacio {
+    height: 20px;
+}
+
+.noticias .navbar-menu .navbar-item:first-child {
+    padding-left: 0px;
+}
+
+.noticias .columns {
+    padding: 0px;
+    margin-right: 0px;
+}
+
+.noticias .columns .column:last-child {
+    padding-right: 0px;
+}
+
+.noticias .navbar-menu .navbar-item:last-child {
+    padding-right: 0px;
+}
+
+.noticias .column {
+    padding: 5px;
+}
+
+.noticias h1 {
+    font-size: 20px;
+}
+
+.noticias h2 {
+    font-size: 18px;
+}
+
+.noticias a .card:hover {
+    box-shadow: 0 2px 3px rgba(0,0,0,.5), 0 0 0 1px rgba(0,0,0,.5);
+}
+
+
+/* INFO */
+
+section .columns {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+section .columns .column:first-child {
+    padding-left: 0px;
+}
+
+section dl th {
+    border-bottom: 1px dashed grey;
+}
+
+section dl dt {
+    font-weight: bold;
+}
+
+section dl dd {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* COLECCIONES */
+
+section.colecciones .card .card-image {
+    padding-left: 10px;
+}
+
+/* FICHA */
+
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline;
+}
+
+.social a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+}
+
+.facebook {
+    background: url("../images/sprite_icons.png") 0 0;
+}
+
+.facebook:hover {
+    background: url("../images/sprite_icons.png") 0 -53px;
+}
+
+.twitter {
+    background: url("../images/sprite_icons.png") -53px 0;
+}
+
+.twitter:hover {
+    background: url("../images/sprite_icons.png") -53px -53px;
+}
+
+.pinterest {
+    background: url("../images/sprite_icons.png") -106px 0;
+}
+
+.pinterest:hover {
+    background: url("../images/sprite_icons.png") -106px -53px;
+}
+
+.instagram {
+    background: url("../images/sprite_icons.png") -158px 0;
+}
+
+.instagram:hover {
+    background: url("../images/sprite_icons.png") -158px -53px;
+}
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logo.png">
+
+    <title>Colecciones</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <script>
+        $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="images/logo.svg" width="60" height="28">
+                <b>Miguel Pérez Colom</b>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="info.html">
+                    La biblioteca
+                </a>
+
+                <a class="navbar-item">
+                    Trámites y servicios
+                </a>
+
+                <a class="navbar-item">
+                    Hazte el carnet
+                </a>
+
+                <a class="navbar-item">
+                    Contacto
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" style="margin-bottom: 0px;">
+                            <strong>Log in</strong>
+                        </a>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Buscar">
+                                <span class="icon is-small is-left">
+      <i class="fas fa-search"></i>
+    </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="container">
+
+        <div class="tabs">
+            <ul>
+                <li class="is-active"><a>Colecciones</a></li>
+                <li><a>Catálogo</a></li>
+                <li><a>Agenda</a></li>
+                <li><a>Salas de estudio</a></li>
+                <li><a>Área infantil</a></li>
+                <li><a>Recursos digitales</a></li>
+            </ul>
+        </div>
+
+
+        <nav class="breadcrumb is-hidden-mobile" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">Miguel Pérez Colom</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Colecciones</a></li>
+            </ul>
+        </nav>
+
+
+        <section class="colecciones">
+
+            <h1 class="title">Colecciones</h1>
+
+            <div class="card is-horizontal columns">
+                <div class="card-image column is-3">
+                    <figure class="image"> <!--  is-4by3 -->
+                        <img src="images/col_1.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h1 class="subtitle">Mujer</h1>
+                    <div class="content">
+                        Fondo especializado que recoge y difunde todo tipo de información y documentación sobre diferentes ámbitos relacionados con la mujer.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card is-horizontal columns">
+                <div class="card-image column is-3">
+                    <figure class="image"> <!--  is-4by3 -->
+                        <img src="images/col_2.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h1 class="subtitle">Cocina</h1>
+                    <div class="content">
+                        Fondo especializado en cocina según alimentos, cocina de autor, cocina vegetariana y recetarios de nuestra tierra y del mundo, entre otras cosas.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card is-horizontal columns">
+                <div class="card-image column is-3">
+                    <figure class="image"> <!--  is-4by3 -->
+                        <img src="images/col_3.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h1 class="subtitle">Ciencia</h1>
+                    <div class="content">
+                        Fondo especializado en libros y publicaciones científicas, tanto de la historia de la ciencia com de los avances actuales.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card is-horizontal columns">
+                <div class="card-image column is-3">
+                    <figure class="image"> <!--  is-4by3 -->
+                        <img src="images/col_4.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h1 class="subtitle">Literatura contemporánea</h1>
+                    <div class="content">
+                        Fondo centrado en la literatura contemporánea de todos los países, especialmente literatura norteamericana.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card is-horizontal columns">
+                <div class="card-image column is-3">
+                    <figure class="image"> <!--  is-4by3 -->
+                        <img src="images/col_5.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h1 class="subtitle">Revistas y diarios</h1>
+                    <div class="content">
+                        Hemeroteca de revistas y diarios locales recogidos desde el año 1920. También recoge revistas de moda, fotografía, política, desde el año 1980. En la sala de la planta baja disponéis de una zona de lectura con las revistas y diarios más recientes.
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <ul>
+                    <li><a href="#">Red de bibliotecas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Trámites y servicios</a></li>
+                </ul>
+            </div>
+            <div class="column is-6">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Protección de datos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

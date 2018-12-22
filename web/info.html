@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logo.png">
+
+    <title>La biblioteca</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <script>
+        $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="images/logo.svg" width="60" height="28">
+                <b>Miguel Pérez Colom</b>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    La biblioteca
+                </a>
+
+                <a class="navbar-item">
+                    Trámites y servicios
+                </a>
+
+                <a class="navbar-item">
+                    Hazte el carnet
+                </a>
+
+                <a class="navbar-item">
+                    Contacto
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" style="margin-bottom: 0px;">
+                            <strong>Log in</strong>
+                        </a>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Buscar">
+                                <span class="icon is-small is-left">
+      <i class="fas fa-search"></i>
+    </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="container">
+
+        <div class="tabs">
+            <ul>
+                <li><a href="colecciones.html">Colecciones</a></li>
+                <li><a>Catálogo</a></li>
+                <li><a>Agenda</a></li>
+                <li><a>Salas de estudio</a></li>
+                <li><a>Área infantil</a></li>
+                <li><a>Recursos digitales</a></li>
+            </ul>
+        </div>
+
+
+        <nav class="breadcrumb is-hidden-mobile" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">Miguel Pérez Colom</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Información</a></li>
+            </ul>
+        </nav>
+
+
+        <section>
+
+            <h1 class="title">Información</h1>
+
+            <div class="columns">
+
+
+                <div class="column is-6">
+                    <p>La Biblioteca es un equipamiento cultural y de proximidad abierto a todos. Su oferta de servicios garantiza el acceso democrático a la información, la transmisión de conocimientos, la formación, la educación permanente, la autoformación i el ocio.</p>
+
+                    <p>La Biblioteca está situada en el interior de una isla de la Derecha del Eixample. Se accede por la calle de Girona, 64, a través de un pasaje y de un patio que constituye un oasis de tranquilidad en medio de la ciudad.</p>
+
+                    <p>La primera Biblioteca Sofia Barat abrió sus puertas el año 1971 en un espacio del Colegio Sagrado Corazón de la calle Diputació. La biblioteca prestó servicio público en esta ubicación hasta diciembre de 1999. En julio de 2000 se  inauguró la nueva biblioteca en el edificio actual, proyectado por la arquitecta Judith Massana.</p>
+                </div>
+
+                <div class="column">
+                    <dl>
+                        <dt>Horarios:</dt>
+                        <dd><table width="100%">
+                                <tr><th width="33%">Días</th><th>Horas</th></tr>
+                                <tr><td>Lunes y viernes</td><td>de 16:00h a 20:30h</td></tr>
+                                <tr><td>Martes y miércoles</td><td>de 10:00h a 14:00h y, de 16:00h a 20:30h</td></tr>
+                                <tr><td>Jueves</td><td>de 10:00h a 20:30h</td></tr>
+                                <tr><td>Sábado</td><td>de 10:00h a 14:00h</td></tr>
+                            </table>
+                        </dd>
+                        <dt>Dirección:</dt><dd>C Girona, 64*68 LI</dd>
+                        <dt>Distrito:</dt><dd>Eixample</dd>
+                        <dt>Barria:</dt><dd>La Derecha del Eixample</dd>
+                        <dt>Código postal:</dt><dd>08009</dd>
+                        <dt>Población:</dt><dd>Barcelona</dd>
+                        <dt></dt><dd></dd>
+                    </dl>
+
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <ul>
+                    <li><a href="#">Red de bibliotecas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Trámites y servicios</a></li>
+                </ul>
+            </div>
+            <div class="column is-6">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Protección de datos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
